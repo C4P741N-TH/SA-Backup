@@ -1,0 +1,30 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<h1> Widget </h1>
+    Sign up<br><br>
+  	<form name="regis-form" method="post" action="registeraction.php">
+  		<input type="text" name="reg_name" placeholder="Name" required><br><br>
+  		<input type="text" name="reg_lastname" placeholder="Lastname" required><br><br>
+  		<input type="text" name="reg_ctz-id" placeholder="Citizen ID" required><br><br>
+  		<input type="text" name="reg_phone" placeholder="Phone" required><br><br>
+  		<input type="text" name="reg_email" placeholder="Email" required><br><br>
+  		<input type="text" name="reg_username" placeholder="Username" required><br><br>
+  		<input type="password" name="reg_pass1" placeholder="Password" required><br><br>
+  		<input type="password" name="reg_pass2" placeholder="Confirm Password" required><br><br>
+  		<input type="checkbox" id="agree" name="agree" required> I accept the membership agreement.<br><br>
+  		<input type="submit" name="regis_btn" value="Sign up">
+  	</form>
+  	<br>
+  	or sign up with<br><br>
+  	<form name="login-facebook" method="get" action="https://www.facebook.com">
+		<input type="submit" value="Sign up with Facebook">
+	</form>
+	<form name="login-google" method="get" action="https://accounts.google.com/accountchooser">
+		<input type="submit" value="Sign up with Google">
+	</form>
+  	Existing user? <a href="login.html">Login</a>
+</body>
+</html>

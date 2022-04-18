@@ -1,0 +1,22 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<h1> Widget </h1>
+    Login<br><br>
+	<form name="login-form" method="post" action="loginaction.php">
+		<input type="text" name="login_username" placeholder="Username" required><br><br>
+		<input type="password" name="login_password" placeholder="Password" required>&nbsp;&nbsp;&nbsp;<a href="forgotpassword.html">Forgot password</a><br><br>
+		<input type="submit" name="login_btn" value="Login">
+	</form>
+	or login with<br><br>
+	<form name="login-facebook" method="get" action="https://www.facebook.com">
+		<input type="submit" value="Sign up with Facebook">
+	</form>
+	<form name="login-google" method="get" action="https://accounts.google.com/accountchooser">
+		<input type="submit" value="Sign up with Google">
+	</form>
+	<br>Don't have an account? <a href="register.html">Sign up</a>
+</body>
+</html>
