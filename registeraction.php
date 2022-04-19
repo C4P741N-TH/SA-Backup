@@ -21,7 +21,7 @@
 	$userext = mysqli_query($link, "SELECT * FROM user WHERE username = '$username'");
 	$emailext = mysqli_query($link, "SELECT * FROM user WHERE email = '$email'");
 	if(mysqli_num_rows($ctzext)){
-    	echo "<script>alert('This Citizen ID already exists');window.location.href='index.html';</script>";
+    	echo "<script>alert('This Citizen ID already exists');window.location.href='login.html';</script>";
 	}
 	else{
 		if(mysqli_num_rows($userext)){
@@ -40,10 +40,10 @@
 					echo "<script>alert('Password do not match');window.location.href='register.html';</script>";
 				}
 				if(!$result){
-					echo "<script>alert('Failed');window.location.href='index.html';</script>";
+					echo "<script>alert('Failed');window.location.href='login.html';</script>";
 				}
 				else{
-					echo "<script>alert('Registeration Completed');window.location.href='index.html';</script>";
+					echo "<script>alert('Registeration Completed');window.location.href='login.html';</script>";
 				}
 			}
 		}

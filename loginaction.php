@@ -18,6 +18,7 @@
 		$data = mysqli_fetch_array($result);
 		$_SESSION['user_id'] = $data['user_id'];
 		$_SESSION['name'] = $data['name'];
+		$_SESSION['lastname'] = $data['lastname'];
 		echo "<script>alert('Login successful!');window.location.href='index.php';</script>";
 	}else
 	{
